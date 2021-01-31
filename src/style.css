@@ -1,0 +1,13 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: bisque;
+  border: 1px solid black;
+  margin: 25px 50px 75px;
+  padding: 25px 50px 75px 100px;
+}
+h1 {
+  text-align: center;
+}
+.button {
+  background-color: #0c0d11;
+}
