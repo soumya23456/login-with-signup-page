@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LogIn from "./loginpage";
+import Home from "./home";
 
 export default class NavigateComponent extends React.Component {
-  signup() {
-    return <LogIn />;
-  }
   render() {
     return (
       <Router>
@@ -27,8 +25,8 @@ export default class NavigateComponent extends React.Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <Link to="/" class="nav-link">
-                    Home <span class="sr-only">(current)</span>
+                  <Link to="/home" class="nav-link">
+                    Home
                   </Link>
                 </li>
                 <li class="nav-item">
@@ -56,6 +54,11 @@ export default class NavigateComponent extends React.Component {
           <Switch>
             <Route path="/login">
               <LogIn />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/home">
+              <Home />
             </Route>
           </Switch>
         </div>

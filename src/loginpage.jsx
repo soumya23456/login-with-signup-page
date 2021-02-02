@@ -3,16 +3,16 @@ import React from "react";
 export default class LogIn extends React.Component {
   render() {
     return (
-      <div id="myForm">
-        <h1>logIn</h1>
-        <div class="mb-3">
-          <label for="signupInputEmail1" class="form-label">
+      <div id="myForm" class="container-sm position-absolute top-25 start-0 ">
+        <h1 class="text-center ">Login</h1>
+        <div class="mb-3  ">
+          <label for="signupInputEmail1" class="form-label ">
             {" "}
             Email address
           </label>
           <input
             type="email"
-            class="form-control"
+            class="form-control w-50 "
             id="signupInputEmail1"
             aria-describedby="emailHelp"
             required
@@ -24,22 +24,22 @@ export default class LogIn extends React.Component {
         <input
           type="password"
           id="inputPassword5"
-          class="form-control"
+          class="form-control w-50"
           maxlength="8"
           aria-describedby="passwordHelpBlock"
           required
         />
-        <div id="passwordHelpBlock" class="form-text">
+        <div id="passwordHelpBlock" class="form-text pb-3">
           Your password must be 8 characters long
         </div>
         <button type="submit" class="btn btn-primary">
           login
         </button>
-        <p className="forgot-password text-right">
+        <p className="forgot-password text-left pt-3">
           <a href="#">Forgot password?</a>
         </p>
-        <form action="https://rlmibwoak.github.stackblitz.io">
-          <button type="submit" class="btn btn-primary button">
+        <form action="https://github-gmgtuc.stackblitz.io">
+          <button type="submit" class="btn btn-primary btn-block mx-auto w-25">
             Create new account
           </button>
         </form>
